@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumb Little Reader</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dumb Little Reader</h1>
+    </header>
+    <main>
+        <section>
+            <label for="feed-url-input">Enter RSS Feed URL:</label>
+            <input type="url" id="feed-url-input" placeholder="https://example.com/rss.xml">
+            <button id="subscribe-button" onclick="subscribe()">Subscribe</button>
+        </section>
+        <section>
+            <h2>Subscribed Feeds</h2>
+            <ul id="feed-list"></ul>
+        </section>
+        <section>
+            <h2>Latest Items</h2>
+            <div id="item-list"></div>
+            <button id="load-more-button" onclick="fetchItems()">Load More</button>
+        </section>
+    </main>
+</body>
+</html>

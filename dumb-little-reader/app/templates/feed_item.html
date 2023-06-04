@@ -1,0 +1,15 @@
+<div class="feed-item" data-item-id="{{ item.id }}">
+    <h3 class="item-title">
+        <a href="{{ item.link }}" target="_blank" onclick="markAsRead({{ item.id }})">{{ item.title }}</a>
+    </h3>
+    <p class="item-description">{{ item.description }}</p>
+    <div class="item-meta">
+        <span class="item-pub-date">{{ item.pub_date }}</span>
+        <span class="item-source">{{ item.source }}</span>
+    </div>
+    <div class="item-reactions">
+        <button class="reaction-button" onclick="reactToItem({{ item.id }}, 'liked')">Like</button>
+        <button class="reaction-button" onclick="reactToItem({{ item.id }}, 'loved')">Love</button>
+        <button class="reaction-button" onclick="reactToItem({{ item.id }}, 'disliked')">Dislike</button>
+    </div>
+</div>

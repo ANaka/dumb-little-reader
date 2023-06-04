@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#feed-url-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#subscribe-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#subscribe-button:hover {
+    background-color: #45a049;
+}
+
+#feed-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.feed {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #ddd;
+}
+
+.item-read {
+    background-color: #ccc;
+}
+
+.load-more-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.load-more-button:hover {
+    background-color: #45a049;
+}
+
+.reaction-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reaction-button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.reaction-button:hover {
+    background-color: #45a049;
+}
+
+.reaction-liked {
+    background-color: #2196F3;
+}
+
+.reaction-liked:hover {
+    background-color: #0b7dda;
+}
+
+.reaction-loved {
+    background-color: #f44336;
+}
+
+.reaction-loved:hover {
+    background-color: #da190b;
+}
+
+.reaction-disliked {
+    background-color: #ff9800;
+}
+
+.reaction-disliked:hover {
+    background-color: #e68a00;
+}
